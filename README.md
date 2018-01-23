@@ -6,7 +6,7 @@ synthétiseur contrôlée par le Leap Motion
 
 1.2 Description
 
-Le but de ce programme est de permettre a l’artiste de contrôlé par le biais de sa main il pourra contrôler la hauteur le grain et la puissance sonore. La synthèse sonore sera créé par Pure Data, le système sera polyphonique. Le contrôle des autres paramètres ce sera par Touch OSC de sorte à sortir complètement l'ordinateur est à avoir une interface graphique plus pratique.
+Le but de ce programme est de permettre a l’artiste de contrôler par le biais de sa main, il pourra contrôler la hauteur le grain et la puissance sonore. La synthèse sonore sera créé par Pure Data, le système sera polyphonique. Le contrôle des autres paramètres ce sera par Touch OSC de sorte à sortir complètement l'ordinateur est à avoir une interface graphique plus pratique.
 
 1.3 Analyse des besoins
 
