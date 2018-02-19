@@ -692,7 +692,7 @@
 #X msg 366 643 1;
 #X floatatom 241 269 5 0 0 0 - - -, f 5;
 #X obj 112 268 hsl 128 15 0 10 0 0 empty empty index-2 -2 -8 0 10 -203904
--1 -1 0 0;
+-1 -1 1270 0;
 #X floatatom 241 299 5 0 0 0 - - -, f 5;
 #X obj 112 298 hsl 128 15 0 10 0 0 empty empty index-3 -2 -8 0 10 -203904
 -1 -1 1270 0;
@@ -718,10 +718,10 @@
 #X symbolatom -384 -128 32 0 0 0 - - -, f 32;
 #X obj -384 -145 list split 1;
 #X floatatom -296 -142 5 0 0 0 - - -, f 5;
-#X floatatom -447 -17 5 0 0 0 - - -, f 5;
-#X floatatom -361 -16 5 0 0 0 - - -, f 5;
-#X floatatom -275 -17 5 0 0 0 - - -, f 5;
-#X floatatom -189 -18 5 0 0 0 - - -, f 5;
+#X floatatom -488 -17 5 0 0 0 - - -, f 5;
+#X floatatom -402 -16 5 0 0 0 - - -, f 5;
+#X floatatom -316 -17 5 0 0 0 - - -, f 5;
+#X floatatom -230 -18 5 0 0 0 - - -, f 5;
 #X msg 288 -82 0;
 #X msg 426 -82 3;
 #X msg 380 -82 2;
