@@ -1,4 +1,4 @@
-#N canvas 232 22 1095 826 10;
+#N canvas 366 22 1095 826 10;
 #X obj 89 245 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 88 180 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
@@ -169,8 +169,8 @@
 #X obj 260 355 s tool;
 #X obj 479 39 hand 0;
 #X obj 395 607 OSCrx 13000;
-#X obj 342 227 OSCparse /hand/0;
-#X obj 360 263 OSCparse /hand/1;
+#X obj 367 251 OSCparse /hand/0;
+#X obj 385 287 OSCparse /hand/1;
 #X obj 214 380 route 0 1;
 #N canvas 1431 307 950 770 messFormat 0;
 #X obj 77 26 inlet;
@@ -215,7 +215,7 @@ finger_count;
 #X connect 16 0 7 0;
 #X restore 213 420 pd messFormat;
 #X obj 213 456 OSCprepend /hand/0;
-#N canvas 490 108 950 770 messFormat 0;
+#N canvas 1431 307 950 770 messFormat 0;
 #X obj 77 26 inlet;
 #X obj 48 297 OSCprepend /pos;
 #X obj 150 300 OSCprepend /direction;
@@ -260,7 +260,7 @@ finger_count;
 #X obj 339 448 OSCprepend /hand/1;
 #X obj 218 586 OSCtx;
 #X msg 277 532 connect localhost 13000;
-#X obj 218 626 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1 10674
+#X obj 218 626 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1 19479
 11236;
 #X obj 218 532 spigot;
 #X obj 276 501 loadbang;
@@ -275,7 +275,7 @@ finger_count;
 #X text 495 739 /hand/n/finger/n/pos;
 #X text 392 583 OSC MESSAGES RX from Leap (port 13000);
 #X obj 395 632 s \$0-fromLeap;
-#X obj 342 202 r \$0-fromLeap;
+#X obj 367 226 r \$0-fromLeap;
 #X obj 481 308 hand 1;
 #X connect 0 0 4 0;
 #X connect 1 0 2 0;

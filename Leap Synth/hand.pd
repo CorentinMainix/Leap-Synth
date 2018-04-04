@@ -1,4 +1,4 @@
-#N canvas 314 131 1126 694 10;
+#N canvas 186 98 1126 694 10;
 #X obj 672 162 unpack 0 0 0;
 #X floatatom 260 253 5 0 0 0 x - -, f 5;
 #X floatatom 260 270 5 0 0 0 y - -, f 5;
@@ -22,7 +22,7 @@
 #X floatatom 552 267 5 0 0 0 y - -, f 5;
 #X floatatom 552 284 5 0 0 0 z - -, f 5;
 #X text 502 231 sphere positiion;
-#X obj 1026 174 OSCparse /finger;
+#X obj 392 14 OSCparse /finger;
 #X obj 210 121 finger 0;
 #X text 352 105 FINGERS;
 #X floatatom 319 328 5 0 0 0 grab - -, f 5;
@@ -32,21 +32,30 @@
 #X obj 209 488 s hand/sphere/x;
 #X obj 138 440 s hand/pos/y;
 #X obj 497 452 s hand/sphere;
-#X obj 695 105 route /direction /pos /pry /sphere/radius /sphere/pos
-/finger_count /grab /pinch /confidence;
+#X obj 594 -2 route /direction /pos /pry /sphere/radius /sphere/pos
+/finger_count /grab /pinch /confidence, f 84;
 #X obj 56 387 s hand/pos/x;
 #X obj 276 125 finger 1;
 #X obj 345 124 finger 2;
 #X obj 484 126 finger 4;
 #X obj 417 124 finger 3;
-#X obj 221 379 pack f f f f f;
-#X obj 227 409 outlet;
+#X obj 277 410 outlet;
+#X obj 340 407 outlet;
+#X obj 400 414 outlet;
+#X obj 470 415 outlet;
+#X obj 209 408 outlet;
+#X obj 566 414 outlet;
+#X obj 645 368 outlet;
+#X obj 732 368 outlet;
 #X connect 0 0 1 0;
 #X connect 0 1 2 0;
 #X connect 0 2 3 0;
+#X connect 1 0 46 0;
 #X connect 4 0 5 0;
 #X connect 4 1 6 0;
 #X connect 4 2 7 0;
+#X connect 5 0 44 0;
+#X connect 5 0 34 0;
 #X connect 6 0 31 0;
 #X connect 9 0 32 0;
 #X connect 10 0 12 0;
@@ -57,12 +66,13 @@
 #X connect 18 1 20 0;
 #X connect 18 2 21 0;
 #X connect 19 0 30 0;
+#X connect 19 0 45 0;
 #X connect 23 0 24 0;
 #X connect 23 0 35 0;
 #X connect 23 0 36 0;
 #X connect 23 0 37 0;
 #X connect 23 0 38 0;
-#X connect 24 0 39 0;
+#X connect 24 0 43 0;
 #X connect 33 0 0 0;
 #X connect 33 1 4 0;
 #X connect 33 2 10 0;
@@ -73,5 +83,8 @@
 #X connect 33 7 27 0;
 #X connect 33 8 29 0;
 #X connect 33 9 23 0;
-#X connect 39 0 40 0;
+#X connect 35 0 39 0;
+#X connect 36 0 40 0;
+#X connect 37 0 42 0;
+#X connect 38 0 41 0;
 #X coords 0 -1 1 1 510 260 1 100 100;
