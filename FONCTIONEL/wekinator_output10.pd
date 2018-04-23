@@ -1,0 +1,69 @@
+#N canvas 116 180 646 449 10;
+#X obj 76 42 list split 1;
+#X obj 30 42 spigot;
+#X obj 34 121 tgl 15 0 empty empty ON/OFF 17 7 0 10 -228856 -66577
+-191407 0 1;
+#X obj 34 182 nbx 5 14 -1e+37 1e+37 0 0 empty empty 1 -10 7 0 10 -228856
+-1 -1 0 256;
+#X obj 31 236 outlet;
+#X obj 34 201 nbx 5 14 -1e+37 1e+37 0 0 empty empty 2 -10 7 0 10 -228856
+-1 -1 0 256;
+#X obj 104 182 nbx 5 14 -1e+37 1e+37 0 0 empty empty 3 -10 7 0 10 -228856
+-1 -1 0 256;
+#X obj 104 201 nbx 5 14 -1e+37 1e+37 0 0 empty empty 4 -10 7 0 10 -228856
+-1 -1 0 256;
+#X obj 174 182 nbx 5 14 -1e+37 1e+37 0 0 empty empty 5 -10 7 0 10 -228856
+-1 -1 0 256;
+#X obj 174 201 nbx 5 14 -1e+37 1e+37 0 0 empty empty 6 -10 7 0 10 -228856
+-1 -1 0 256;
+#X obj 244 182 nbx 5 14 -1e+37 1e+37 0 0 empty empty 7 -10 7 0 10 -228856
+-1 -1 0 256;
+#X obj 244 201 nbx 5 14 -1e+37 1e+37 0 0 empty empty 8 -10 7 0 10 -228856
+-1 -1 0 256;
+#X obj 41 253 outlet;
+#X obj 101 236 outlet;
+#X obj 111 253 outlet;
+#X obj 171 236 outlet;
+#X obj 181 253 outlet;
+#X obj 241 236 outlet;
+#X obj 251 253 outlet;
+#X symbolatom 140 122 32 0 0 0 - - -, f 32;
+#X obj 314 182 nbx 5 14 -1e+37 1e+37 0 0 empty empty 9 -10 7 0 10 -228856
+-1 -1 0 256;
+#X obj 314 201 nbx 5 14 -1e+37 1e+37 0 0 empty empty 10 -12 7 0 10
+-228856 -1 -1 0 256;
+#X obj 317 239 outlet;
+#X obj 327 256 outlet;
+#X obj 30 59 unpack s f f f f f f f f f f;
+#X text 138 144 Wekinator 10 output sacle 0 to 1;
+#X obj 30 25 OSCrx 12000;
+#X text 115 25 set your OSC adresse;
+#X text 111 161 right clic to set up you OSC adresse;
+#X obj 28 79 inlet;
+#X connect 0 0 19 0;
+#X connect 1 0 24 0;
+#X connect 2 0 1 1;
+#X connect 3 0 4 0;
+#X connect 5 0 12 0;
+#X connect 6 0 13 0;
+#X connect 7 0 14 0;
+#X connect 8 0 15 0;
+#X connect 9 0 16 0;
+#X connect 10 0 17 0;
+#X connect 11 0 18 0;
+#X connect 20 0 22 0;
+#X connect 21 0 23 0;
+#X connect 24 1 3 0;
+#X connect 24 2 5 0;
+#X connect 24 3 6 0;
+#X connect 24 4 7 0;
+#X connect 24 5 8 0;
+#X connect 24 6 9 0;
+#X connect 24 7 10 0;
+#X connect 24 8 11 0;
+#X connect 24 9 20 0;
+#X connect 24 10 21 0;
+#X connect 26 0 0 0;
+#X connect 26 0 1 0;
+#X connect 29 0 2 0;
+#X coords 0 -1 1 1 351 120 1 20 100;
